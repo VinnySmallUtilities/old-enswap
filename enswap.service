@@ -1,0 +1,17 @@
+# /lib/systemd/system/enswap.service
+[Unit]
+Description=Enable swap (automatic)
+After=netfilter-persistent.service
+
+[Service]
+WorkingDirectory=/home/vinny/_/Privoxy_МСЭ/_ServicesFiles/
+
+User=root
+Group=root
+
+Type=exec
+ExecStart=/G/enswap.exe /media/veracrypt1/swap.sh 2G
+SuccessExitStatus=0
+
+[Install]
+WantedBy=multi-user.target
