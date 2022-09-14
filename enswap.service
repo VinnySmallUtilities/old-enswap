@@ -10,7 +10,7 @@ User=root
 Group=root
 
 Type=exec
-ExecStart=/G/enswap.exe /media/veracrypt1/swap.sh 2G
+ExecStart=/G/enswap.exe /media/veracrypt1/swap.sh 4G
 SuccessExitStatus=0
 
 [Install]
